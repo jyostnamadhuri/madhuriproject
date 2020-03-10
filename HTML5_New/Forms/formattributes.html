@@ -1,0 +1,44 @@
+
+
+
+<!-- 
+
+Form Action:
+The action attribute specifies where to send the form-data when a form is submitted.
+
+
+
+Empty or #:
+An action of # indicates that the form stays on the same page, simply suffixing the url with a #. 
+
+The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
+
+HTML forms provide three methods of encoding.
+
+application/x-www-form-urlencoded (the default)
+multipart/form-data
+text/plain
+
+GET:
+The method attribute of the form element tells the web browser how to send form data to a server. Specifying a value of GET means the browser will add the form contents to the end of the URL. This offers a number of advantages for simple forms. It allows the browser to cache the results of the form submission, and it also allows the user to bookmark the page once the form has been submitted. As such, GET is generally used for simple forms where security is not a concern.
+
+If your form contains sensitive data, you should specify a value of POST for the method attribute. Since GET appends the form data to the current URL, it can only be used where the contents of the submission (including the complete URL) will result in a string that is 2048 characters long, or less. This is the maximum length of a URL. GET can only be used to send ASCII data.
+
+target,	_self, _blank:
+
+Specifies the browser context in which the form’s response should be displayed.
+
+Name: Specifies form name
+
+
+
+
+-->
+
+<form action="" method="POST" enctype="multipart/form-data">
+Name: <input type="text" name="fname"><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+

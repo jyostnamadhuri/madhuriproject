@@ -1,0 +1,16 @@
+<!--
+
+	The HTML Ruby Fallback Parenthesis (<rp>) element is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the <ruby> element. One <rp> element should enclose each of the opening and closing parentheses that wrap the <rt> element that contains the annotation's text.
+
+	<ruby> — an inline element that contains base text with ruby annotations
+<rt> — ruby text, coming after the base text it defines
+<rp> — ruby parentheses, an element used to wrap opening and closing parentheses around <rt> ruby text. These are for user agents that don’t support ruby text, so that it makes sense when displayed inline. Browsers that support <ruby> hide <rp> via {display:none;}.
+
+-->
+
+
+
+<ruby>
+  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+  字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>

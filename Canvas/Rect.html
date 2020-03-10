@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Canvas!</title>
+</head>
+<body>
+    <canvas id="canvas" width="70" height="90"/>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var c = canvas.getContext("2d");
+        c.fillStyle = 'blue';
+        c.fillRect(10, 10, 60, 80);
+    </script>
+</body>
+</html>
+
+<!--
+
+	Explanation:
+	<canvas> element is used to draw graphics on a web page.
+     <canvas id="myCanvas" width="200" height="100"></canvas>
+
+     The getElementById() method returns the element that has the ID attribute with the specified value. 
+
+	The getContext() method returns an object that provides methods and properties for drawing on the canvas.
+
+	This reference will cover the properties and methods of the getContext("2d") object, which can be used to draw text, lines, boxes, circles, and more - on the canvas.
+     -->
